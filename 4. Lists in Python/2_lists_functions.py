@@ -43,3 +43,6 @@ print(list)
 
 """ list.remove(200)
 print(list) """  # it would give error
+
+# index function : returns the index of the first occurence of an element
+print(list.index(12))
