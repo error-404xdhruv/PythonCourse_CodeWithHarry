@@ -3,6 +3,10 @@
 Dictionary in Python is an unordered collection of data values, used to store data values like a map, which, unlike other data types that hold only a single value as an element, Dictionary holds key:value pair. Key-Value is provided in the dictionary to make it more optimised.  """
 """ Note - Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly.  """
 
+# creating an empty dictionary
+dicEmp = {}
+print(dicEmp)
+# remember how empty sets are initialised
 
 dict1 = {
     1 : "Geeks" , 
