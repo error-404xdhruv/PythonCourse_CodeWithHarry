@@ -5,10 +5,6 @@
 """ A set is always sorted (acc to ASCII table) """
 
 # create a set
-from http.client import PRECONDITION_REQUIRED
-from multiprocessing import Semaphore
-
-
 s = {2, 3, 4, 1, 5, 1}
 print(s)
 
