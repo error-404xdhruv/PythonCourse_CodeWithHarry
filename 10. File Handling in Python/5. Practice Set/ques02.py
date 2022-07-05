@@ -1,12 +1,14 @@
-# Take an integer as input from user and if it is greater than the prev stored value in the file then update the file with the new integer
 
-score = input("Enter your Score: ")
+score = int(input("Enter your Score: "))
 
-with open('hiscore.txt', 'r') as file:
+with open('highscore.txt', 'r') as file:
     hiscore = file.read()
+    temp = int(hiscore)
 
-if (score > hiscore):
-    with open ('hiscore.txt', 'w') as file:
-        file.write(score)
-else :
-    print("You did not score enough!")
+if (temp >= score):
+    print("Retry ; HighScore: ", end=" ")
+    print(temp)
+else:
+    print("New Highscore.")
+    with open('highscore.txt', 'w') as file:
+        file.write(str(score))
