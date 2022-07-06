@@ -1,0 +1,1 @@
+# search for the line number in which the word 'python' is present in log_file.txt

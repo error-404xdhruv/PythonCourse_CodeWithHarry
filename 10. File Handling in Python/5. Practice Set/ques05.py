@@ -1,4 +1,5 @@
 # Search for the word 'Python' in a log file.
+
 """ with open ("log_file.txt", "r") as file:
     content = file.read()
 
