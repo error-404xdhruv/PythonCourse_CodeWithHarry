@@ -1,3 +1,7 @@
+
+# from datetime import date
+from datetime import *
+
 class Employee:
     company = "Google"
     salary = 10000
@@ -8,9 +12,17 @@ class Employee:
     def greetEmployee (signature):
         print(f"Good Morning, Sir !\n{signature}")
 
+    @staticmethod
+    def dateTimeWhenEmployeeCameToWork ():
+        today = date.today()
+        now = datetime.now()
+        # time = date.time()
+        print(f'{now}')
+
 harry = Employee()
 harry.salary = 120000
 harry.getSalary()
+harry.dateTimeWhenEmployeeCameToWork()
 harry.greetEmployee("Thanks!")
 
 sampleEmployee = Employee()
