@@ -4,6 +4,9 @@ class calculator:
     def __init__(self, num):
         self.number = num
 
+    @staticmethod
+    def greetUser():
+        print("Hello, User!")
     def square (self):
         print(f"Square: {self.number**2}")
     def cube (self):
@@ -14,6 +17,7 @@ class calculator:
 
 number = int(input())
 a = calculator(number)
+a.greetUser()
 a.square()
 a.cube()
 b = float(a.squareRoot())
