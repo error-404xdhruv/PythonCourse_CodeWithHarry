@@ -8,3 +8,7 @@ print(Sample.a)
 print(obj.a)
 
 # Ans: No
+
+# but we can change it in the following way:
+Sample.a = "good bye"
+print(Sample.a)
