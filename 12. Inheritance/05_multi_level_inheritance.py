@@ -3,7 +3,6 @@
 # In Python , 3.X "class Person" is equivalent to "class Person(object)"
 from unicodedata import name
 
-
 class Person:
     def __init__(self, name):
         self.name = name
