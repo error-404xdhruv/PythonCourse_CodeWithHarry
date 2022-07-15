@@ -24,3 +24,8 @@ while (True):
         print(f"Your input resulted in error: {error}")
 
 print("Thank You")
+
+""" 
+Exceptions in Python can be handled using a try statement. The code that handles the exception is written in the except cluase.
+When the exception is handled, the code flow continues without program interruptions.
+"""
