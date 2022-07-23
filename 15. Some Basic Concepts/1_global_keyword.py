@@ -7,3 +7,5 @@ def change ():
     print(c)
 
 change()
+
+# global keyword is used to modify the value of variable outside of the current scope
