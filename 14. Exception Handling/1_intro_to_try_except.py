@@ -21,6 +21,7 @@ while (True):
     except Exception as error:
         print(f"Your input resulted in error: {error}")
 
+# Notice one thing when some error occurs then Thank You is not printed. We would learn to use this thing in 5th one using finally statement
 print("Thank You")
 
 """ 
