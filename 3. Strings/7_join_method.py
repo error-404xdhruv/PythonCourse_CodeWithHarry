@@ -14,3 +14,10 @@ print(s)
 # method 2
 list2 = ["how", "to", "win", "friends"]
 print(" ".join(list2))
+
+# method 3
+print(' S '.join('12345'))
+
+# joining with dictionary
+# when joining with dictionary, the string will join with the keys and not with the values
+print(' S '.join({'hello': 1 , 'world': 2}))
