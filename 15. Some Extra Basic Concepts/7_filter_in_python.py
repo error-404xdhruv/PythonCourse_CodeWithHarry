@@ -10,9 +10,6 @@ def isVowel (letter):
     else:
         return False
 
-list  = ['h', 'a', 'g', 't', 'e', 'r']
-filteredList = filter(isVowel, list)
-for i in filteredList:
-    print(i)
-
-print(filteredList)
+list1  = ['h', 'a', 'g', 't', 'e', 'r']
+res = filter(isVowel, list1)
+print(list(res))
