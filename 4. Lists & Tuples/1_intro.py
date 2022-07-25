@@ -24,7 +24,7 @@ z = [t, u]
 print(z)
 
 # list slicing
-circle = ["dhruv", "abh1shank" , "divyam", "bh" , "av1ral"]
+circle = ["dhruv", "abh1shank" , "abhishek", "shri" , "av1ral"]
 # it means print the elements of list from index 0 to 3
 print(circle[0:4])
 # print from begin to end
