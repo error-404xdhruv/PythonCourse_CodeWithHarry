@@ -5,7 +5,7 @@ Write a function to filter the vowels from a list
 def isVowel (letter):
     vowels = ['a', 'e', 'i', 'o', 'u']
     temp = letter.lower()
-    if letter in vowels:
+    if temp in vowels:
         return True
     else:
         return False
