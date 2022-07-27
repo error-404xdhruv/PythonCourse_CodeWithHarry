@@ -3,6 +3,8 @@
 
 from cgi import print_form
 import random
+import sys
+
 
 def game(player, computer):
     if (player == computer):
@@ -40,24 +42,28 @@ scissors = '''
 ---.__(___)
 '''
 
-player = input(
-    "Please type 'R' for Rock, 'S' for Scissor and 'P' for Paper: ")
-print("Player Chooses: ")
-if (player == 'R'):
-    print(rock)
-elif (player == 'S'):
-    print(scissors)
-elif (player == 'P'):
-    print(paper)
+while (True):
+    player = input(
+        "Please type 'R' for Rock, 'S' for Scissor and 'P' for Paper or 'Q' to Quit the Game: ")
+    print("Player Chooses: ")
+    if (player == 'Q'):
+        print("Quit!")
+        break
+    elif (player == 'R'):
+        print(rock)
+    elif (player == 'S'):
+        print(scissors)
+    elif (player == 'P'):
+        print(paper)
 
-turn = ['R', 'S', 'P']
-computer = random.choice(turn)
-print("Computer Chooses: ")
-if (computer == 'R'):
-    print(rock)
-elif (computer == 'S'):
-    print(scissors)
-elif (computer == 'P'):
-    print(paper)
+    turn = ['R', 'S', 'P']
+    computer = random.choice(turn)
+    print("Computer Chooses: ")
+    if (computer == 'R'):
+        print(rock)
+    elif (computer == 'S'):
+        print(scissors)
+    elif (computer == 'P'):
+        print(paper)
 
-game(player, computer)
+    game(player, computer)
