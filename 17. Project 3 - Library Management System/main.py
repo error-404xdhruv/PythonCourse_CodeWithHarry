@@ -33,9 +33,8 @@ class student:
 
 
 if __name__ == "__main__":
-    while(True):
-        Student = student()
-        welcomeMsg = '''
+    Student = student()
+    welcomeMsg = '''
 -------- Welcome to Library Management System --------
     \tPlease choose an option:
         1. List all the books
@@ -43,7 +42,8 @@ if __name__ == "__main__":
         3. Donate / Return a book
         4. Exit the Library
         '''
-        print(welcomeMsg)
+    print(welcomeMsg)
+    while(True):
         CentralLibrary = Library(
             ["Data Structures and Algo", "Django", "CLRS", "Python Notes"])
         cmd = int(input("Enter your Choice: "))
