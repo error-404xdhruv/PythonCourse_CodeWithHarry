@@ -20,18 +20,21 @@ class Library:
         self.books.append(bookName)
         print("Thank You.")
 
+
 class student:
     def requestBook(self):
         self.book = input("Enter the name of the book you want to borrow: ")
         return self.book
 
     def returnBook(self):
-        self.book = input("Enter the name of the book you want to return or donate: ")
+        self.book = input(
+            "Enter the name of the book you want to return or donate: ")
         return self.book
 
 
 if __name__ == "__main__":
     while(True):
+        Student = student()
         welcomeMsg = '''
 -------- Welcome to Library Management System --------
     \tPlease choose an option:
@@ -48,9 +51,9 @@ if __name__ == "__main__":
         if (cmd == 1):
             CentralLibrary.displayBooksList()
         elif (cmd == 2):
-            CentralLibrary.borrowBooks(student.requestBook())
+            CentralLibrary.borrowBooks(Student.requestBook())
         elif (cmd == 3):
-            CentralLibrary.returnBook(student.returnBook())
+            CentralLibrary.returnBook(Student.returnBook())
         elif (cmd == 4):
             print("Thanks for using our service.")
             break
