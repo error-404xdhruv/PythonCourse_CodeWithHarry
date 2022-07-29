@@ -43,11 +43,11 @@ if __name__ == "__main__":
         4. Exit the Library
         '''
     print(welcomeMsg)
+    CentralLibrary = Library(
+        ["Data Structures and Algo", "Django", "CLRS", "Python Notes"])
     while(True):
-        CentralLibrary = Library(
-            ["Data Structures and Algo", "Django", "CLRS", "Python Notes"])
-        cmd = int(input("Enter your Choice: "))
         # since Python does not have switch case, we have   to use simple if else to go around
+        cmd = int(input("Enter your Choice: "))
         if (cmd == 1):
             CentralLibrary.displayBooksList()
         elif (cmd == 2):
